@@ -7,3 +7,6 @@ class Customer(models.Model):  #ตารางเก็บรายละเอ
 
     class Meta:
         db_table = "CUS_NAME"
+    
+    def __str__(self):
+        return self.name

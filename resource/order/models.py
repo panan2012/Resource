@@ -15,7 +15,7 @@ class Order(models.Model):
 
 
 class Detail(models.Model): 
-    id = models.CharField(primary_key=True, db_column='Order_no', max_length=4)
+    order = models.ForeignKey(Order, db_column='Order_no', on_delete=models.CASCADE)
     goods = models.ForeignKey(Goods, db_column='Goods_id',on_delete=models.CASCADE)
     order_date = models.DateTimeField(db_column='Ord_date')
     send_date = models.DateTimeField(db_column='Fin_date')
