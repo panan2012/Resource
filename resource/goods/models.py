@@ -8,3 +8,4 @@ class Goods(models.Model): #ตารางเก็บรายละเอี�
 
     class Meta:
         verbose_name_plural  = "Goods"
+        db_table = "GOODS_NAME"
