@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class Goods(models.Model): #ตารางเก็บรายละเอียดสินค้า
     id = models.CharField(primary_key=True, db_column='Goods_id', max_length=10)
     name = models.CharField(db_column="Goods_name", max_length=30)
@@ -9,3 +9,6 @@ class Goods(models.Model): #ตารางเก็บรายละเอี�
     class Meta:
         verbose_name_plural  = "Goods"
         db_table = "GOODS_NAME"
+
+    def __str__(self) -> str:
+        return f"({self.id}){self.name}"

@@ -25,6 +25,9 @@ class Detail(models.Model):
 
     class Meta:
         db_table = "D_ORDER"
+        constraints = [
+            models.UniqueConstraint(fields=['order', 'goods'], name='order_goods_uniq'),
+        ]
 
 
 class Masterorder(models.Model):
