@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from django.conf.urls.static import static
+from django.conf import settings
+from page.views import homepage
 
 urlpatterns = [
   
     path('admin/', admin.site.urls),
+     path('', homepage, name='homepage'),
     
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
