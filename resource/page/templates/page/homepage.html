@@ -1,6 +1,53 @@
 <!DOCTYPE html>
 <html>
+<style>
+table{
+    margin-top: 100px;
+}
+table, caption, th, td {
+  border:1px solid black;
+}
+caption{
+    font-size: larger;
+    font-weight: bold;
+    background-color: chocolate;
+}
+table,td{
+    height: 30px;
+    vertical-align: bottom;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 <body>
-    <h1>ระบบโปรแกรมบริหารจัดการสินค้าคงคลัง</h1>
+
+<table class="center">
+    <thead>
+        <caption>ระบบโปรแกรมบริหารจัดการสินค้าคงคลัง</caption>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1. ฐานข้อมูลอ้างอิง</th>
+            <th>2. การทำงานประจำวัน</th>
+            <th>3. รายงาน</th>
+            <th>4. ออกจากระบบ</th>
+        </tr>
+        <tr>
+            <td><a href="admin/customer/customer/">1.1 บันทึก/แก้ไข ข้อมูลลูกค้า</a></td>
+            <td><a href="/admin/order/order/">2.1 บันทึก/แก้ไข การสั่งซื้อสินค้า</a></td>
+            <td><a href="">3.1  รายงานกำหนดส่งสินค้า</a></td>
+            <td><a href="JavaScript:window.close()">4.1 ออกจากระบบโปรแกรม</a></td>
+        </tr>
+        <tr>
+            <td><a href="admin/goods/goods/">1.2 บันทึก/แก้ไข ข้อมูลสินค้า</a></td>
+            <td><a href="admin/order/order/">2.2 การประมวลผลข้อมูลการสั่งสินค้า</a></td>
+        </tr>
+    </tbody>
+</table>
+
+
 </body>
+
 </html>
